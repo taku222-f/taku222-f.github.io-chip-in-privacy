@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サポート | Chip In</title>
+<style>
+  :root {
+    --ink: #1c1c1c;
+    --ink-soft: #55524d;
+    --paper: #fbfaf7;
+    --rule: #dedad2;
+    --accent: #2f6f4f;
+    --card: #f4f2ec;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  header {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .app-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin: 0 0 20px;
+  }
+  .app-name .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  h1 {
+    font-size: 28px;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+  }
+  .lede {
+    font-size: 15.5px;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 17px;
+    margin: 0 0 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--rule);
+  }
+  p {
+    margin: 0 0 14px;
+    color: var(--ink-soft);
+    font-size: 15.5px;
+  }
+  .faq {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  details {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 4px 16px;
+  }
+  summary {
+    cursor: pointer;
+    padding: 14px 0;
+    font-size: 15.5px;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    font-weight: 400;
+    color: var(--ink-soft);
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  details[open] summary::after {
+    content: "–";
+  }
+  details p {
+    padding-bottom: 16px;
+    margin: 0;
+  }
+  .contact-card {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .contact-card p:last-child {
+    margin-bottom: 0;
+  }
+  a {
+    color: var(--accent);
+  }
+  .meta {
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-size: 13.5px;
+    color: var(--ink-soft);
+  }
+  footer a { color: var(--ink-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="app-name"><span class="dot"></span>Chip In</p>
+    <h1>サポート</h1>
+    <p class="lede">Chip Inのご利用でお困りの際は、こちらをご確認ください。</p>
+  </header>
+
+  <section>
+    <h2>よくある質問</h2>
+    <div class="faq">
+
+      <details>
+        <summary>グループに相手を招待するにはどうすればいいですか?</summary>
+        <p>
+          グループの設定画面から招待コード(共有リンク)を発行し、iMessageなどで
+          相手に送ってください。相手がリンクを開いて承諾すると、そのグループの
+          取引を一緒に記録・確認できるようになります。
+        </p>
+      </details>
+
+      <details>
+        <summary>精算額はどうやって計算されますか?</summary>
+        <p>
+          各メンバーが「払った金額」と「本来負担すべき金額」の差額をもとに、
+          送金の回数ができるだけ少なくなるよう自動で計算します。個別の取引ごとに
+          精算済みにすることも、月末にまとめて精算することもできます。
+        </p>
+      </details>
+
+      <details>
+        <summary>一度精算した取引を取り消すことはできますか?</summary>
+        <p>
+          はい。精算済みの取引は、精算前の状態に戻すことができます。精算済みの
+          取引でも、使った金額の合計はいつでも確認できます。
+        </p>
+      </details>
+
+      <details>
+        <summary>グループのメンバーを削除できますか?</summary>
+        <p>
+          グループの権限保持者(作成者、または権限を引き継いだメンバー)のみ、
+          メンバーの削除や招待コードの再発行を行えます。コードが第三者に知られて
+          しまった場合は、再発行することで古いコードを無効化できます。
+        </p>
+      </details>
+
+      <details>
+        <summary>オフラインでも使えますか?</summary>
+        <p>
+          はい。オフライン中でも取引の記録・編集・削除が可能です。オンラインに
+          戻ると自動的に他のメンバーのデータと同期されます。
+        </p>
+      </details>
+
+      <details>
+        <summary>グループを解散するとデータはどうなりますか?</summary>
+        <p>
+          グループを解散すると、そのグループの取引データはすべて削除されます。
+          解散は取り消せませんので、実行前に確認ダイアログが表示されます。
+        </p>
+      </details>
+
+      <details>
+        <summary>データはどこに保存されますか?</summary>
+        <p>
+          お使いのiCloudアカウント内(Apple CloudKit)に保存されます。独自の
+          サーバーは持たず、Apple以外の第三者にデータが送信されることはありません。
+          詳しくは<a href="privacy/">プライバシーポリシー</a>をご覧ください。
+        </p>
+      </details>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>お問い合わせ</h2>
+    <div class="contact-card">
+      <p>
+        上記で解決しない場合や、不具合のご報告・ご要望は、以下の連絡先まで
+        お気軽にご連絡ください。
+      </p>
+      <p>
+        メール: <a href="mailto:aku222.appdev@ymail.ne.jp">aku222.appdev@ymail.ne.jp</a><br>
+        開発者: Takuma Fujii(<a href="https://twitter.com/_taku_it" target="_blank" rel="noopener">@_taku_it</a>)
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Takuma Fujii — Chip In ・ <a href="privacy/">プライバシーポリシー</a>
+  </footer>
+
+</div>
+</body>
+</html>
